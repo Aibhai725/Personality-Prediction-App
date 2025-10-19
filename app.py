@@ -36,7 +36,7 @@ def encode_feature(col_name, value):
 def home():
     return render_template('index.html')
 
-@app.route('/predict', methods=['POST'])
+@app.route('/predict', methods=['GET', 'POST'])
 def predict():
     try:
         features = []
