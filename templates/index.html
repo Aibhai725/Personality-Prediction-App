@@ -99,4 +99,9 @@
         <div class="result">{{ prediction_text }}</div>
     </div>
 </body>
+    <!-- Prediction message -->
+<!-- Only display prediction if it exists -->
+{% if message %}
+    <p>{{ message }}</p>
+{% endif %}
 </html>
